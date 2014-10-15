@@ -1,9 +1,11 @@
 package com.example.usingintent;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class UsingIntentActivity extends ActionBarActivity
 {
@@ -35,5 +37,10 @@ public class UsingIntentActivity extends ActionBarActivity
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+    
+    //onClick event
+    public void onClick(View view) {
+        startActivity(new Intent("net.learn2develop.SecondActivity"));
     }
 }
