@@ -9,8 +9,41 @@
     tools:context="com.example.usingintent.UsingIntentActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
         android:text="Dit is de tweede activity" />
+
+    <Button
+        android:id="@+id/btn_OK"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_username"
+        android:layout_below="@+id/txt_username"
+        android:layout_marginTop="41dp"
+        android:onClick="onClick"
+        android:text="OK" />
+
+    <EditText
+        android:id="@+id/txt_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="53dp"
+        android:ems="10" ><requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Please enter your name" />
 
 </RelativeLayout>

@@ -9,13 +9,21 @@
     tools:context="com.example.usingintent.UsingIntentActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
         android:text="Dit is de main activity" />
+
     <Button
         android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:text="Toon tweede Activity"
-		android:onClick="onClick" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:onClick="onClick"
+        android:text="Toon tweede Activity" />
 
 </RelativeLayout>
